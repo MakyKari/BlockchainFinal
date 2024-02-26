@@ -1,0 +1,4 @@
+deployment: npx hardhat run deployments/deploy.js --network sepolia
+
+contract address: 0x42261ac16900A9d81d4e074Cf615447748487692
+https://sepolia.etherscan.io/address/0x42261ac16900A9d81d4e074Cf615447748487692
