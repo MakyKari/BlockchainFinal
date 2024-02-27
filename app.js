@@ -30,7 +30,7 @@ let db, collection;
 
 app.use(session({
     secret: "qwerty",
-    resave: false,
+    resave: true,
     saveUninitialized: true
 }));
 
@@ -219,14 +219,16 @@ app.post('/admin/remove_recommendations', async (req, res) => {
 app.post('/admin/addCompany', upload.single('photo'), async (req, res) => {
     try {
         const { companyName, description, companyGoal} = req.body;
-        const photo = req.file.buffer;
+        var photo = req.file;
         const creationDate = new Date().toLocaleDateString();
         const donated = 0;
+
+        photo = photo.buffer;
 
         if(companyGoal < 0) {
             return res.status(400).send('Company goal must be a positive number');
         }
-
+        console.log(companyGoal)
         await db.collection('cards').insertOne({
             companyName,
             description,

@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\User\\Downloads\\wbc\\contracts\\contract.sol": {
-      "lastModificationDate": 1708879926055,
-      "contentHash": "97e05a210860ab202389cd193a61bb82",
+      "lastModificationDate": 1709060512209,
+      "contentHash": "dfd00e72f040235dd9d274d9292cdfd2",
       "sourceName": "contracts/contract.sol",
       "solcConfig": {
         "version": "0.8.0",
